@@ -55,7 +55,7 @@ jQuery(document).ready(function ($) {
 			// console.log('boom');
 			val = $(this).val();
 			if (val == 'dark') {
-				$('head').append('<link id="-dark-mode" rel="stylesheet" href="' + MagnificAddons.mae_plugin_url + 'assets/-dark-mode.css" type="text/css" />');
+				$('head').append('<link id="-dark-mode" rel="stylesheet" href="' + ControlsPopupForElementor.cpfe_plugin_url + 'assets/-dark-mode.css" type="text/css" />');
 
 			}
 			if (val == 'light') {
@@ -64,7 +64,7 @@ jQuery(document).ready(function ($) {
 			}
 			if (val == 'auto') {
 				if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-					$('head').append('<link id="-dark-mode" rel="stylesheet" href="' + MagnificAddons.mae_plugin_url + 'assets/-dark-mode.css" type="text/css" />');
+					$('head').append('<link id="-dark-mode" rel="stylesheet" href="' + ControlsPopupForElementor.cpfe_plugin_url + 'assets/-dark-mode.css" type="text/css" />');
 				}
 			}
 		});

@@ -3,7 +3,7 @@
 * Plugin Name: Controls popup for Elementor
 * Description: This plugin adds the ability to expand Elementor text controls and code editors in a popup window for better editing experience
 * Plugin URI: https://github.com/webdevs-pro/controls-popup-for-elementor
-* Version: 1.0
+* Version: 1.0.1
 * Author: MagnificSoft
 * Author URI: https://github.com/webdevs-pro/
 * License: GPL 3.0
@@ -15,15 +15,9 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 if( ! function_exists('get_plugin_data') ){
 	require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 }
+define('CPFE_VERSION', get_plugin_data( __FILE__ )['Version']);
 
-define('MAE_VERSION', get_plugin_data( __FILE__ )['Version']);
-define('MAE_PATH', plugin_dir_path(__FILE__));
-define('MAE_URL', plugins_url('', __FILE__));
-define('MAE_BASENAME', plugin_basename(__FILE__));
-
-
-
-final class Magnific_Addons {
+final class ControlsPopupForElementor {
 
 	const MINIMUM_ELEMENTOR_VERSION = '3.0.2';
 
@@ -113,7 +107,7 @@ final class Magnific_Addons {
 		printf( '<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', $message );
 	}
 }
-new Magnific_Addons();
+new ControlsPopupForElementor();
 
 
 require 'plugin-update-checker/plugin-update-checker.php';

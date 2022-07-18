@@ -84,7 +84,7 @@
 /* TEXTAREA */
 .mae_control_popup.mae_textarea_popup .elementor-control-field {
     height: calc(100% - 40px);
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 .mae_control_popup.mae_textarea_popup .elementor-control-input-wrapper {
     height: calc(100% - 10px);

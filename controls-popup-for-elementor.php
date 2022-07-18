@@ -3,8 +3,8 @@
 * Plugin Name: Controls popup for Elementor
 * Description: This plugin adds the ability to expand Elementor text controls and code editors in a popup window for better editing experience
 * Plugin URI: https://github.com/webdevs-pro/controls-popup-for-elementor
-* Version: 1.0.1
-* Author: MagnificSoft
+* Version: 1.0.2
+* Author: Alex Ishchenko
 * Author URI: https://github.com/webdevs-pro/
 * License: GPL 3.0
 * Text Domain: controls-popup-for-elementor
@@ -68,7 +68,7 @@ final class ControlsPopupForElementor {
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: Elementor */
 			esc_html__( '"%1$s" requires "%2$s" to be installed and activated.', 'controls-popup-for-elementor' ),
-			'<strong>' . esc_html__( 'Magnific Addons for Elementor', 'controls-popup-for-elementor' ) . '</strong>',
+			'<strong>' . esc_html__( 'Controls popup for Elementor', 'controls-popup-for-elementor' ) . '</strong>',
 			'<strong>' . esc_html__( 'Elementor', 'controls-popup-for-elementor' ) . '</strong>'
 		);
 
@@ -83,7 +83,7 @@ final class ControlsPopupForElementor {
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: Elementor 3: Required Elementor version */
 			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'controls-popup-for-elementor' ),
-			'<strong>' . esc_html__( 'Magnific Addons for Elementor', 'controls-popup-for-elementor' ) . '</strong>',
+			'<strong>' . esc_html__( 'Controls popup for Elementor', 'controls-popup-for-elementor' ) . '</strong>',
 			'<strong>' . esc_html__( 'Elementor', 'controls-popup-for-elementor' ) . '</strong>',
 			self::MINIMUM_ELEMENTOR_VERSION
 		);
@@ -99,7 +99,7 @@ final class ControlsPopupForElementor {
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: PHP 3: Required PHP version */
 			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'controls-popup-for-elementor' ),
-			'<strong>' . esc_html__( 'Magnific Addons for Elementor', 'controls-popup-for-elementor' ) . '</strong>',
+			'<strong>' . esc_html__( 'Controls popup for Elementor', 'controls-popup-for-elementor' ) . '</strong>',
 			'<strong>' . esc_html__( 'PHP', 'controls-popup-for-elementor' ) . '</strong>',
 			self::MINIMUM_PHP_VERSION
 		);

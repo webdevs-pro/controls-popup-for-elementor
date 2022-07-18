@@ -1,0 +1,181 @@
+:root {
+    --popup_top: 20vh;
+    --popup_left: 100px;
+    --popup_width: 800px;
+    --popup_height: 60vh;
+    --popup_wysiwyg_top: 20vh;
+    --popup_wysiwyg_left: 100px;
+    --popup_wysiwyg_width: 800px;
+    --popup_wysiwyg_height: 60vh;
+}
+
+
+
+
+
+.mae_control_popup {
+    position: fixed !important;
+    top: var(--popup_top);
+    left: var(--popup_left);
+    width: var(--popup_width);
+    height: var(--popup_height);
+    /* max-height: calc(calc(100vh - 14px) - var(--popup_top));
+    max-width: calc(calc(100vw - 21px) - var(--popup_left)); */
+    min-height: 320px;
+    min-width: 500px;
+    background: #404349;
+    z-index: 999999999999999999;
+    border: 1px solid rgb(213, 218, 223);
+    border-radius: 5px;
+    box-sizing: content-box;
+    cursor: move;
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,.1);
+    animation: aa_fade_zoom_in 150ms forwards;
+    padding: 10px !important;
+    box-sizing: border-box;
+}
+
+
+/* WYІIWYG */
+.mae_control_popup.mae_wysiwyg_popup .elementor-control-field {
+    height: 100%;
+}
+.mae_control_popup.mae_wysiwyg_popup .elementor-control-input-wrapper {
+    height: 100%;
+}
+.mae_control_popup.mae_wysiwyg_popup .wp-editor-wrap {
+    height: 100%;
+}
+.mae_control_popup .wp-editor-wrap .wp-editor-container {
+    height: calc(100% - 28px);
+}
+/* WYІIWYG VISUAL*/
+.mae_control_popup.mae_wysiwyg_popup .wp-editor-wrap.tmce-active .mce-tinymce.mce-container.mce-panel {
+    height: 100%;
+}
+.mae_control_popup.mae_wysiwyg_popup .wp-editor-wrap.tmce-active .mce-container-body.mce-stack-layout {
+    height: 100%;
+}
+.mae_control_popup.mae_wysiwyg_popup .wp-editor-wrap.tmce-active .mce-edit-area.mce-container.mce-panel  {
+    height: calc(100% - 61px);
+}
+.mae_control_popup.mae_wysiwyg_popup .wp-editor-wrap.tmce-active .mce-edit-area.mce-container.mce-panel iframe  {
+    height: 100% !important;
+}
+/* WYІIWYG HTML */
+.mae_control_popup.mae_wysiwyg_popup .wp-editor-wrap.html-active {
+    height: 100%;
+}
+.mae_control_popup.mae_wysiwyg_popup .wp-editor-wrap.html-active .elementor-wp-editor.wp-editor-area {
+    height: calc(100% - 37px) !important;
+}
+
+/* CODE */
+.mae_control_popup.mae_code_popup .elementor-control-field {
+    height: calc(100% - 40px);
+    overflow-y: auto;
+}
+.mae_control_popup.mae_code_popup .elementor-control-input-wrapper {
+    height: 100%;
+}
+.mae_control_popup.mae_code_popup .ace_editor.elementor-code-editor {
+    min-height: 100% !important;
+}
+/* TEXTAREA */
+.mae_control_popup.mae_textarea_popup .elementor-control-field {
+    height: calc(100% - 40px);
+    overflow-y: scroll;
+}
+.mae_control_popup.mae_textarea_popup .elementor-control-input-wrapper {
+    height: calc(100% - 10px);
+}
+
+
+
+
+.mae_control_popup.mae_code_popup .ace_print-margin {
+    visibility: hidden !important;
+}
+
+
+
+.mae_control_popup .elementor-control-title {
+    display: none;
+}
+
+
+@keyframes aa_fade_zoom_in {
+    from {
+        opacity: 0;
+        transform: scale(0.97);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.maximize_button_wrapper {
+    text-align: right;
+    margin-bottom: 5px
+}
+.maximize_button {
+    padding: 10px 20px;
+    border: 1px solid rgb(213, 218, 223);
+    border-radius: 3px;	
+    display: inline-block;
+    cursor: pointer;
+}
+
+.minimize_button {
+    padding: 10px 20px;
+    border: 1px solid rgb(213, 218, 223);
+    border-radius: 3px;	
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* fix button for text area */
+.elementor-control-text .maximize_button_wrapper {
+    margin-bottom: -5px
+}
+.elementor-control-text .maximize_button {
+        padding: 6px 12px;
+        font-size: 80%;
+}
+
+
+
+
+
+/* POPUP TOOLBAR */
+.popup_toolbar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    height: 35px;
+}
+.popup_heading {
+    margin-left: 10px;
+
+
+}
+
+
+.mae_popup_placeholder {
+    height: 140px;
+    border: 1px dashed #555;
+}
+
+.mae_control_popup .elementor-control-tag-area {
+    margin-top: 0 !important;
+}
+
+/* .mae_control_popup.elementor-control {
+    padding: 0 10px 10px;
+ } */
+
+
+
+
+
+

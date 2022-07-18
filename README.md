@@ -1,3 +1,5 @@
-# controls-popup-for-elementor
+# Controls popup for elementor
  
-![1658154260](https://user-images.githubusercontent.com/14045233/179533213-6b116f5c-2324-4e60-bbcc-66fab3de594a.gif)
+ This plugin adds the ability to expand Elementor text controls and code editors in a popup window for better editing experience
+
+![1658154530](https://user-images.githubusercontent.com/14045233/179534173-9521f1f5-51f4-4e70-b3e2-d6fddcf08a4b.gif)

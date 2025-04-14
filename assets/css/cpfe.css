@@ -19,14 +19,12 @@
     left: var(--popup_left);
     width: var(--popup_width);
     height: var(--popup_height);
-    /* max-height: calc(calc(100vh - 14px) - var(--popup_top));
-    max-width: calc(calc(100vw - 21px) - var(--popup_left)); */
     min-height: 320px;
     min-width: 500px;
-    background: #404349;
+    background: var(--e-a-bg-default);
     z-index: 999999999999999999;
-    border: 1px solid rgb(213, 218, 223);
-    border-radius: 5px;
+    border: var(--e-a-border-bold);
+    border-radius: var(--e-a-border-radius);
     box-sizing: content-box;
     cursor: move;
     box-shadow: 0 2px 20px 0 rgba(0,0,0,.1);
@@ -120,16 +118,16 @@
 }
 .maximize_button {
     padding: 10px 20px;
-    border: 1px solid rgb(213, 218, 223);
-    border-radius: 3px;	
+    border: var(--e-a-border-bold);
+    border-radius: var(--e-a-border-radius);
     display: inline-block;
     cursor: pointer;
 }
 
 .minimize_button {
     padding: 10px 20px;
-    border: 1px solid rgb(213, 218, 223);
-    border-radius: 3px;	
+    border: var(--e-a-border-bold);
+    border-radius: var(--e-a-border-radius);
     display: inline-block;
     cursor: pointer;
 }
@@ -139,8 +137,8 @@
     margin-bottom: -5px
 }
 .elementor-control-text .maximize_button {
-        padding: 6px 12px;
-        font-size: 80%;
+    padding: 6px 12px;
+    font-size: 80%;
 }
 
 
@@ -163,7 +161,7 @@
 
 .mae_popup_placeholder {
     height: 140px;
-    border: 1px dashed #555;
+    border: 1px dashed var(--e-a-border-color-bold);
 }
 
 .mae_control_popup .elementor-control-tag-area {

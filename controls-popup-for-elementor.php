@@ -3,7 +3,7 @@
 * Plugin Name: Controls popup for Elementor
 * Description: This plugin adds the ability to expand Elementor text controls and code editors in a popup window for better editing experience
 * Plugin URI: https://github.com/webdevs-pro/controls-popup-for-elementor
-* Version: 1.0.2
+* Version: 1.1.0
 * Author: Alex Ishchenko
 * Author URI: https://github.com/webdevs-pro/
 * License: GPL 3.0

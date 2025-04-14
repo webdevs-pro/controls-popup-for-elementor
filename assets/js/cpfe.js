@@ -49,30 +49,6 @@ jQuery(document).ready(function ($) {
 
 
 
-	$(window).load(function () {
-		// DETECT ELEMENTOR UI THEME CHANGE
-		$(document).on('change', 'select[data-setting="ui_theme"]', function () {
-			// console.log('boom');
-			val = $(this).val();
-			if (val == 'dark') {
-				$('head').append('<link id="-dark-mode" rel="stylesheet" href="' + ControlsPopupForElementor.cpfe_plugin_url + 'assets/-dark-mode.css" type="text/css" />');
-
-			}
-			if (val == 'light') {
-				$('#-dark-mode-css').remove();
-				$('#-dark-mode').remove();
-			}
-			if (val == 'auto') {
-				if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-					$('head').append('<link id="-dark-mode" rel="stylesheet" href="' + ControlsPopupForElementor.cpfe_plugin_url + 'assets/-dark-mode.css" type="text/css" />');
-				}
-			}
-		});
-	});
-
-
-
-
 
 	// SET POPUP SETINGS
 	if (typeof(Storage) !== "undefined") {

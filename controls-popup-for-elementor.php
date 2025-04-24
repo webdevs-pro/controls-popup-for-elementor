@@ -3,19 +3,16 @@
 * Plugin Name: Controls popup for Elementor
 * Description: This plugin adds the ability to expand Elementor text controls and code editors in a popup window for better editing experience
 * Plugin URI: https://github.com/webdevs-pro/controls-popup-for-elementor
-* Version: 1.1.0
+* Version: 1.2.0
 * Author: Alex Ishchenko
 * Author URI: https://github.com/webdevs-pro/
 * License: GPL 3.0
-* Text Domain: controls-popup-for-elementor
 */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-if( ! function_exists('get_plugin_data') ){
-	require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
-}
-define('CPFE_VERSION', get_plugin_data( __FILE__ )['Version']);
+
+
 
 final class ControlsPopupForElementor {
 
@@ -34,9 +31,16 @@ final class ControlsPopupForElementor {
 
 	public function i18n() {
 		load_plugin_textdomain( 'controls-popup-for-elementor', false, basename( dirname( __FILE__ ) ) . '/languages' ); 
+
+		if( ! function_exists('get_plugin_data') ){
+			require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+		}
+		define('CPFE_VERSION', get_plugin_data( __FILE__ )['Version']);
 	}
 
 	public function init() {
+
+
 
 		// Check if Elementor installed and activated
 		if ( ! did_action( 'elementor/loaded' ) ) {
@@ -111,7 +115,9 @@ new ControlsPopupForElementor();
 
 
 require 'plugin-update-checker/plugin-update-checker.php';
-$cpfeUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+
+$cpfeUpdateChecker = PucFactory::buildUpdateChecker(
 	'https://github.com/webdevs-pro/controls-popup-for-elementor/',
 	__FILE__,
 	'controls-popup-for-elementor'
